@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificados de Sorvetes</title>
+    <link rel="stylesheet" href="paginaProdutos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Faça seu Pedido de Sorvetes</h1>
+
+        <div class="categories-container">
+            <!-- Categoria de Picoles -->
+            <div class="category">
+                <h2>Picoles</h2>
+                <div class="products-container">
+                    <!-- Adicione um bloco de produto para cada sabor -->
+                    <!-- Repita este bloco para os outros 24 sabores de Picolé -->
+                    <div class="product">
+                        <img src="img/picole-blue-ice-400x125.png" alt="BLUE ICE">
+                        <h3>BLUE ICE</h3>                        
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Adicione mais 24 blocos de produtos para os outros sabores de Picolé -->
+
+                    <div class="product">
+                        <img src="img/picole-coco-branco-400x125.png" alt="COCO BRANCO">
+                        <h3>COCO BRANCO</h3>                        
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="product">
+                        <img src="img/picole-milho-400x125.png" alt="MILHO VERDE">
+                        <h3>MILHO VERDE</h3>                        
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+
+                    
+
+                    
+            <!-- Categoria de Potes -->
+            <div class="category">
+                <h2>Potes de 150ml</h2>
+                <div class="products-container">
+                    <!-- Adicione um bloco de produto para cada sabor -->
+                    <!-- Repita este bloco para os outros 7 sabores de Potes -->
+                    <div class="product">
+                        <img src="img/pote-milho-verde-271x200.png" alt="MILHO">
+                        <h3>MILHO</h3>
+                        <p>Descrição do MILHO.</p>
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="product">
+                        <img src="img/pote-maracuja-3-271x200.png" alt="MARACUJÁ">
+                        <h3>MARACUJÁ</h3>
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="product">
+                        <img src="img/pote-morango-271x200.png" alt="yougurte">
+                        <h3>YOUGURTE</h3>
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Adicione mais 7 blocos de produtos para os outros sabores de Potes -->
+                </div>
+            </div>
+
+            <!-- Categoria de Bits -->
+            <div class="category">
+                <h2>Bits</h2>
+                <div class="products-container">
+                    <!-- Adicione um bloco de produto para cada sabor -->
+                    <!-- Repita este bloco para as outras 1 opção de Bits -->
+                    <div class="product">
+                        <img src="img/bits-chocolate-217x200.png" alt="DARK">
+                        <h3>DARK</h3>
+                        <p>Descrição do DARK.</p>
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="product">
+                        <img src="img/bits-acai-217x200.png" alt="AÇAÍ">
+                        <h3>AÇAÍ</h3>
+                        <div class="quantity-container">
+                            <button class="quantity-button" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="quantity-input" value="0" readonly>
+                            <button class="quantity-button" onclick="incrementQuantity()">+</button>
+                        </div>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Adicione mais 1 bloco de produto para a outra opção de Bits -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
